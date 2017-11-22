@@ -1,0 +1,15 @@
+{
+    "name": "node-golf",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Brian Hunley",
+    "license": "ISC",
+    "devDependencies": {},
+    "dependencies": {
+        "yargs": "^10.0.3"
+    }
+}
