@@ -5,7 +5,7 @@ const fs = require('fs');
 var fetchNotes = () => {
   try {
     var notesString = fs.readFileSync('notes-data.json');
-    return JSON.parse(notesString);    
+    return JSON.parse(notesString);
   } catch (e) {
     return [];
   }
@@ -35,7 +35,19 @@ const getAll = () => {
 };
 
 const getNote = (title) => {
-  console.log('Getting note', title);
+  var notes = fetchNotes();
+  var note = {
+    title,
+    body
+  };
+  var foundNote = notes.filter((note) => note.title === title);
+  console.log(foundNote);
+
+  /*
+  if (foundNote.length === 1) {
+    return note;
+  }
+  */
 }
 
 const removeNote = (title) => {
