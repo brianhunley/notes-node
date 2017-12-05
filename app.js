@@ -16,7 +16,8 @@ if (command === 'add') {
   var note = notes.addNote(argv.title, argv.body);
 
   if (note) {
-    console.log(`Note added: The title is '${argv.title}' and the body is '${argv.body}'.`);
+    console.log('Note added.');
+    notes.logNote(note);
   } else {
     console.log("Sorry, note not added. The note was in the database already.");
   }
@@ -28,7 +29,8 @@ if (command === 'add') {
   var note = notes.getNote(argv.title);
 
   if (note) {
-    console.log(`Note read: The title is '${argv.title}' and the body is '${argv.body}'.`);
+    console.log('Note read');
+    notes.logNote(note);
   } else {
     console.log("Sorry, note not found. The note was not in the database.");
   }
