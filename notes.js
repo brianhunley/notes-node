@@ -1,4 +1,4 @@
-console.log('Loading notes module (notes.js)...');
+// console.log('Loading notes module (notes.js)...');
 
 const fs = require('fs');
 
@@ -31,7 +31,7 @@ const addNote = (title, body) => {
 };
 
 const getAll = () => {
-  console.log('Getting all notes');
+  return fetchNotes();
 };
 
 const getNote = (title) => {
@@ -59,6 +59,10 @@ const removeNote = (title) => {
 }
 
 const logNote = (note) => {
+  // break on this line and use repl to output note
+  // use read command with --title
+  debugger;
+
   console.log(`The title is '${note.title}' and the body is '${note.body}'.`);
 };
 
