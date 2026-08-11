@@ -11,6 +11,6 @@
     "devDependencies": {},
     "dependencies": {
         "lodash": "^4.17.21",
-        "yargs": "^10.0.3"
+        "yargs": "^18.1.0"
     }
 }
